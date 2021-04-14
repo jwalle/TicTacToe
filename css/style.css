@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #1b2032;
+    color: white;
+}
+
+header {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1vw;   
+}
+
+#game-container .cell {
+    background-color: rgba(256, 256, 256, 0.1);
+    width: 23vw;
+    height: 23vw;
+    max-width: 200px;
+    max-height: 200px;
+    font-family: sans-serif;
+    font-size: min(200px, 23vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-infos {
+    background-color: rgba(256, 256, 256, 0.1);
+    border: solid 5px rgba(256,256,256,0.2);
+    font-family: sans-serif;
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    width: 400px;
+    height: 300px;
+}
+
+#game-timer, #game-turn {
+    margin: 10px;
+    align-self: center;
+    font-size: 2em;
+}
+
+#players-infos span {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+#arrow-one, #arrow-two {
+    color: green;
+    font-size: 1em;
+}
+
+.scores {
+    margin: 0 10px;   
+}
